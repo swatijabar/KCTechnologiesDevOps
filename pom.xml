@@ -115,13 +115,20 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3.1</version>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version> <!-- Updated to a newer version -->
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <!-- Optional configurations, like web resources -->
+          <webResources>
+            <resource>
+              <directory>src/main/webapp</directory>
+              <includes>
+                <include>**/*</include>
+              </includes>
+            </resource>
+          </webResources>
         </configuration>
-      </plugin>     
+      </plugin>  
     </plugins>
   </build>
 
