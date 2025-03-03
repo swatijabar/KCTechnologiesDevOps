@@ -113,22 +113,15 @@
   </profiles> -->
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.3.1</version> <!-- Updated to a newer version -->
-        <configuration>
-          <!-- Optional configurations, like web resources -->
-          <webResources>
-            <resource>
-              <directory>src/main/webapp</directory>
-              <includes>
-                <include>**/*</include>
-              </includes>
-            </resource>
-          </webResources>
-        </configuration>
-      </plugin>  
+       <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.6.0</version> <!-- You can keep the version or update to a newer one -->
+      <configuration>
+        <source>1.7</source> <!-- Set to Java 7 or later -->
+        <target>1.7</target> <!-- Set to Java 7 or later -->
+      </configuration>
+    </plugin>
     </plugins>
   </build>
 
