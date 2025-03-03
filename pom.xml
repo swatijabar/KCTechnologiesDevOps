@@ -116,7 +116,7 @@
        <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.6.0</version> <!-- You can keep the version or update to a newer one -->
+      <version>3.8.0</version> <!-- You can keep the version or update to a newer one -->
       <configuration>
         <source>1.7</source> <!-- Set to Java 7 or later -->
         <target>1.7</target> <!-- Set to Java 7 or later -->
